@@ -1,24 +1,60 @@
 .home-all {
+    background-color: transparent;
+    color: white;
+    height: auto;
+    padding: 0 2vw;
+    /* width: 92vw; */
+    width: 100%;
+}
+
+.hero {
+    border-bottom: rgba(255, 255, 255, 0.45) 0.1vh solid;
+    height: 104vh;
+    position: relative;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    background-color: #fdf0d5;
-    height: 100vh;
-    gap: 200px;
+    gap: 350px;
 }
 
-.home-intro {
-    padding-top: 450px;
-    width: 900px;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    font-size: 20px;
-    color: #003049;
+.home-bg {
+    background-size: cover;
+    filter: brightness(50%);
+    position: fixed;
+    width: 100%;
+    z-index: -10;
 }
 
-.home-yoo {
-    width: 1800px;
-    font-size: 250px;
-    margin-left: -80px;
-    color: #003049;
+.hero-creative {
+    bottom: 18vh;
+    font-size: 160px;
+    font-weight: 200;
+    line-height: 0.7;
+    margin-top: 550px;
+    margin-left: -20px;
+}
+
+.hero-intro {
+    margin-top: 750px;
+    bottom: 18vh;
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 0.7;
+    width: 500px;
+}
+
+.intro {
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: rgba(255, 255, 255, 0.45) 0.1vh solid;
+    height: auto;
+    padding: 16vh 0;
+    position: relative;
+    width: 100%;
+}
+
+.intro-heading {
+    font-size: 80px;
+}
+
+.intro-content {
+    width: 800px;
 }
