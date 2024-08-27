@@ -8,7 +8,7 @@
 }
 
 .hero {
-    border-bottom: rgba(255, 255, 255, 0.45) 0.1vh solid;
+    /* border-bottom: rgba(255, 255, 255, 0.45) 0.1vh solid; */
     height: 104vh;
     position: relative;
     width: 100%;
@@ -44,17 +44,42 @@
 
 .intro {
     background-color: rgba(0, 0, 0, 0);
-    border-bottom: rgba(255, 255, 255, 0.45) 0.1vh solid;
     height: auto;
     padding: 16vh 0;
+    padding-top: 300px;
+    padding-bottom: 300px;
     position: relative;
     width: 100%;
+    display: flex;
+    gap: 500px;
 }
 
 .intro-heading {
     font-size: 80px;
+    width: 400px;
 }
 
 .intro-content {
-    width: 800px;
+    width: 600px;
+    font-size: 26px;
+}
+
+.work-img {
+    width: 700px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+.work-list-div {
+    display: flex;
+    gap: 250px;
+    margin-bottom: 150px;
+}
+
+.work-list-heading {
+    font-size: 65px;
+}
+
+.skillset {
+    width: 1800px;
 }

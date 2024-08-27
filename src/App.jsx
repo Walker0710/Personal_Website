@@ -1,9 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home/Home'
-import About from './pages/About/About'
-import Projects from './pages/Projects/Projects'
-import Blogs from './pages/Blogs/Blogs'
 import Navbar from './components/Navbar/Navbar'
+import Navbar11 from './components/Navbar11/Navbar11';
 import Footer from './components/Footer/Footer'
 import './App.css'
 
@@ -11,12 +9,10 @@ function AppContent() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Navbar11/>
       <Routes>
         <Route path='/' exact element={<Home />} />
-        <Route path='/about' exact element={<About />} />
-        <Route path='/blogs' exact element={<Blogs />} />
-        <Route path='/project' exact element={<Projects />} />
       </Routes>
       <Footer />
     </>
