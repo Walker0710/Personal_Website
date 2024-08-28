@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-  
+
     if (window.innerWidth > 992) {
       gsap.to(containerRef.current, {
         scrollTrigger: {
@@ -66,8 +66,8 @@ const Home = () => {
           <div className='hero-creative'>
             <h1 className='hero-first font-style-2'>creative</h1>
             <div className='hero-yoo'>
-            <h1 className='hero-second font-style-1'>DESIGNER </h1>
-            <h1 className='hero-third font-style-2'>& </h1>
+              <h1 className='hero-second font-style-1'>DESIGNER </h1>
+              <h1 className='hero-third font-style-2'>& </h1>
             </div>
             <h1 className='hero-fourth font-style-1'>DEVELOPER </h1>
           </div>
@@ -123,7 +123,7 @@ const Home = () => {
 
         <div className='skillset'>
           <h1>Skillset</h1>
-          <Marquee autoFill speed={100} direction={'right'}>
+          <div>
             <div>
               , AZURE
             </div>
@@ -151,7 +151,7 @@ const Home = () => {
             <div>
               , MONGODB
             </div>
-          </Marquee>
+          </div>
         </div>
 
         <div className='tool-i-use'>
@@ -170,18 +170,23 @@ const Home = () => {
         </div>
 
         {/* wapas video chalegi */}
-        <div className='connect'>
-          <h1 className='connect-heading'>LET'S <br /> CONNECT</h1>
+        <div className='ending'>
+          <div className='ending-connect'>
+            <h1 className='connect-head connect-first'>LET'S</h1>
+            <h1 className='connect-head connect-second'>CONNECT</h1>
+          </div>
           <div className='connect-interested'>
-            <h2>WHAT INTEREST'S ME</h2>
-            <div>
-              <button>FRONTEND DEVELOPMENT</button>
-              <button>BACKEND DEVELOPMENT</button>
-              <button>UX/UI DESIGN</button>
-            </div>
-            <div>
-              <button>STARTUPS</button>
-              <button>PIZZA</button>
+            <h2 className='connect-interested-heading'>WHAT INTEREST'S ME</h2>
+            <div className='connect-interested-list'>
+              <div className='connect-interested-list-first'>
+                <button className='connect-button'>FRONTEND DEVELOPMENT</button>
+                <button className='connect-button'>BACKEND DEVELOPMENT</button>
+                <button className='connect-button'>UX/UI DESIGN</button>
+              </div>
+              <div className='connect-interested-list-second'>
+                <button className='connect-button'>STARTUPS</button>
+                <button className='connect-button'>PIZZA</button>
+              </div>
             </div>
           </div>
         </div>
