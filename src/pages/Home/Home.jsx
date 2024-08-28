@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
+  
     if (window.innerWidth > 992) {
       gsap.to(containerRef.current, {
         scrollTrigger: {
@@ -64,7 +64,12 @@ const Home = () => {
       <div className='home-all'>
         <div className='hero'>
           <div className='hero-creative'>
-            creative <br /> DESIGNER & <br /> DEVELOPER
+            <h1 className='hero-first font-style-2'>creative</h1>
+            <div className='hero-yoo'>
+            <h1 className='hero-second font-style-1'>DESIGNER </h1>
+            <h1 className='hero-third font-style-2'>& </h1>
+            </div>
+            <h1 className='hero-fourth font-style-1'>DEVELOPER </h1>
           </div>
           <div className='hero-intro'>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -86,9 +91,7 @@ const Home = () => {
               INDEPENDENT, I WORK ALSO WITH WEB
               AGENCIES, COMPANIES, STARTUPS AND
               INDIVIDUALS TO CREATE A BLUEPRINT FOR THE
-              DIGITAL BUSINESS. ADVISOR AND PARTNER OF
-              SOME DIGITAL AND FINTECH STARTUPS. ALSO,
-              JUDGE AT CSSDA AND THE WEBBY.</p>
+              DIGITAL BUSINESS.</p>
           </div>
           <div className='intro-structure'>
             photo
@@ -96,23 +99,23 @@ const Home = () => {
         </div>
 
         <div className='work'>
-          <h1>Works</h1>
+          <h1 className='work-heading'>Works</h1>
           <div className='work-list'>
             <div className='work-list-div sairama'>
               <h2 className='work-list-heading'>SAIRAMA KRISHNA</h2>
               <img className='work-img' src={work1} alt="work" />
             </div>
             <div className='work-list-div pathway'>
-              <img className='work-img' src={work2} alt="work" />
               <h2 className='work-list-heading'>PATHWAYS</h2>
+              <img className='work-img' src={work2} alt="work" />
             </div>
             <div className='work-list-div event-radar'>
               <h2 className='work-list-heading'>EVENT RADAR</h2>
               <img className='work-img' src={work1} alt="work" />
             </div>
             <div className='work-list-div portals'>
-              <img className='work-img' src={work2} alt="work" />
               <h2 className='work-list-heading'>ELAN PORTALS</h2>
+              <img className='work-img' src={work2} alt="work" />
             </div>
           </div>
         </div>
@@ -167,11 +170,31 @@ const Home = () => {
         </div>
 
         {/* wapas video chalegi */}
-
-        <div>
-          
+        <div className='connect'>
+          <h1 className='connect-heading'>LET'S <br /> CONNECT</h1>
+          <div className='connect-interested'>
+            <h2>WHAT INTEREST'S ME</h2>
+            <div>
+              <button>FRONTEND DEVELOPMENT</button>
+              <button>BACKEND DEVELOPMENT</button>
+              <button>UX/UI DESIGN</button>
+            </div>
+            <div>
+              <button>STARTUPS</button>
+              <button>PIZZA</button>
+            </div>
+          </div>
         </div>
 
+        <div className='footer'>
+          <h2>ARE YOU PLANNING A PROJECT?</h2>
+          <button>CONTACT ME</button>
+          <div className='footer-contact'>
+            <p>EMAIL</p>
+            <p>LINKEDIN</p>
+            <p>INSTAGRAM</p>
+          </div>
+        </div>
 
       </div>
     </>

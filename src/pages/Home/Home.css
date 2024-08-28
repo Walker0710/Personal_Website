@@ -1,3 +1,13 @@
+@font-face {
+    font-family: migra;
+    src: url(/src/assets/Font/Migra-Extralight.ttf);
+}
+
+@font-face {
+    font-family: tusk;
+    src: url(/src/assets/Font/TuskerGrotesk-2600Semibold.ttf);
+}
+
 .home-all {
     background-color: transparent;
     color: white;
@@ -8,7 +18,6 @@
 }
 
 .hero {
-    /* border-bottom: rgba(255, 255, 255, 0.45) 0.1vh solid; */
     height: 104vh;
     position: relative;
     width: 100%;
@@ -26,20 +35,53 @@
 
 .hero-creative {
     bottom: 18vh;
-    font-size: 160px;
-    font-weight: 200;
-    line-height: 0.7;
-    margin-top: 550px;
-    margin-left: -20px;
+    margin-top: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -290px;
+    width: 1200px; /* for gap */
+}
+
+.font-style-1 {
+    font-family: tusk;
+    font-size: 320px;
+    font-weight: 100;
+    color: #f5eee6;
+}
+
+.font-style-2 {
+    font-family: migra;
+    font-size: 70px;
+    color: #f5eee6;
+    color: rgb(243, 219, 199);
+}
+
+.hero-yoo {
+    display: flex;
+    margin-bottom: -150px;
+}
+
+.hero-first {
+    margin-left: -400px;
+    margin-bottom: -70px;
+}
+
+.hero-third {
+    margin-left: 30px;
+    margin-top: 180px;
+}
+
+.hero-fourth {
+    margin-left: -15px;
 }
 
 .hero-intro {
-    margin-top: 750px;
-    bottom: 18vh;
-    font-size: 25px;
+    margin-top: 700px;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
     font-weight: 200;
-    line-height: 0.7;
-    width: 500px;
+    line-height: 0.8;
+    width: 600px;
 }
 
 .intro {
@@ -55,13 +97,24 @@
 }
 
 .intro-heading {
+    font-family: tusk;
+    font-weight: 100;
     font-size: 80px;
     width: 400px;
 }
 
 .intro-content {
     width: 600px;
+    font-family: "Poppins", sans-serif;
     font-size: 26px;
+}
+
+.work-heading {
+    font-family: tusk;
+    font-weight: 100;
+    font-size: 120px;
+    margin-bottom: 100px;
+    margin-left: 30px;
 }
 
 .work-img {
@@ -72,14 +125,32 @@
 
 .work-list-div {
     display: flex;
-    gap: 250px;
+    width: 1000px;
     margin-bottom: 150px;
 }
 
 .work-list-heading {
     font-size: 65px;
+    margin-right: 60px;
+}
+
+.sairama {
+    margin-left: 50px;
+}
+
+.pathway {
+    margin-left: 370px;
+}
+
+.event-radar {
+ margin-left: 780px;   
+}
+
+.portals {
+    margin-left: 370px;
 }
 
 .skillset {
     width: 1800px;
 }
+

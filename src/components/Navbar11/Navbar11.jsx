@@ -6,10 +6,6 @@ const Navbar11 = () => {
   const [isActive, setIsActive] = useState(false);
   const isAuthenticated = !!localStorage.getItem('token');
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-  };
-
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
@@ -28,7 +24,9 @@ const Navbar11 = () => {
   return (
     <div className="nav" style={navStyles}>
       <label htmlFor="active" className="menu-btn" onClick={toggleMenu}>
-        &#10761;
+        {/* &#10761; */}
+        {/* {isActive ? '.' : '∷'} */}
+        &nbsp;
       </label>
       <input type="checkbox" id="active" checked={isActive} />
       <div className="wrapperArm">
