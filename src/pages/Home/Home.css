@@ -27,7 +27,7 @@
 
 .home-bg {
     background-size: cover;
-    filter: brightness(50%);
+    filter: brightness(100%);
     position: fixed;
     width: 100%;
     z-index: -10;
@@ -167,6 +167,7 @@
 }
 
 .ending {
+    margin-top: 190px;
     display: flex;
     margin-left: -270px;
 }
@@ -175,8 +176,19 @@
     margin-right: 450px;
 }
 
+.ending-inter-foot {
+    display: flex;
+    flex-direction: column;
+}
+
 .connect-second {
     margin-top: -140px;
+}
+
+.ending-inter-foot {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
 }
 
 .connect-interested-heading {
@@ -192,4 +204,32 @@
     margin: 10px;
     border: #f5eee6 solid;
     border-radius: 15px;
+}
+
+.footer {
+    margin-left: -840px;
+    margin-top: -45px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-right: -650px;
+    width: 1250px;
+    border-bottom: #f5eee6 solid 0.3px;
+}
+
+.footer-contact-heading {
+    font-family: tusk;
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    margin-right: 180px;
+    display: flex;
+    gap: 50px;
 }

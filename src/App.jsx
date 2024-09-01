@@ -9,8 +9,8 @@ function AppContent() {
 
   return (
     <>
-      {/* <Navbar /> */}
-      <Navbar11/>
+      <Navbar />
+      {/* <Navbar11/> */}
       <Routes>
         <Route path='/' exact element={<Home />} />
       </Routes>
