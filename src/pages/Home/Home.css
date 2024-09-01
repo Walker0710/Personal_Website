@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: migra;
     src: url(/src/assets/Font/Migra-Extralight.ttf);
 }
@@ -13,7 +13,6 @@
     color: white;
     height: auto;
     padding: 0 2vw;
-    /* width: 92vw; */
     width: 100%;
 }
 
@@ -40,7 +39,6 @@
     flex-direction: column;
     margin-left: -290px;
     width: 1200px;
-    /* for gap */
 }
 
 .font-style-1 {
@@ -158,6 +156,252 @@
 
 .skillset {
     width: 1800px;
+}
+
+.connect-head {
+    font-family: tusk;
+    font-weight: 100;
+    font-size: 320px;
+}
+
+.ending {
+    margin-top: 190px;
+    display: flex;
+    margin-left: -270px;
+}
+
+.ending-connect {
+    margin-right: 450px;
+}
+
+.ending-inter-foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.connect-second {
+    margin-top: -140px;
+}
+
+.ending-inter-foot {
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+}
+
+.connect-interested-heading {
+    font-family: tusk;
+    font-weight: 100;
+    font-size: 120px;
+}
+
+.connect-button {
+    padding: 20px;
+    background: transparent;
+    color: #f5eee6;
+    margin: 10px;
+    border: #f5eee6 solid;
+    border-radius: 15px;
+}
+
+.footer {
+    margin-left: -840px;
+    margin-top: -45px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    margin-right: -650px;
+    width: 1250px;
+    border-bottom: #f5eee6 solid 0.3px;
+}
+
+.footer-contact-heading {
+    font-family: tusk;
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.footer-social {
+    margin-top: 10px;
+    margin-right: 180px;
+    display: flex;
+    gap: 50px;
+} */
+
+
+@font-face {
+    font-family: migra;
+    src: url(/src/assets/Font/Migra-Extralight.ttf);
+}
+
+@font-face {
+    font-family: tusk;
+    src: url(/src/assets/Font/TuskerGrotesk-2600Semibold.ttf);
+}
+
+.home-all {
+    background-color: transparent;
+    color: white;
+    height: auto;
+    width: 100%;
+}
+
+.hero {
+    height: 104vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 350px;
+}
+
+.home-bg {
+    background-size: cover;
+    filter: brightness(100%);
+    position: fixed;
+    width: 100%;
+    z-index: -10;
+}
+
+.hero-creative {
+    bottom: 18vh;
+    margin-top: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -290px;
+    width: 1200px;
+}
+
+.font-style-1 {
+    font-family: tusk;
+    font-size: 320px;
+    font-weight: 100;
+    color: #f5eee6;
+}
+
+.font-style-2 {
+    font-family: migra;
+    font-size: 70px;
+    color: rgb(243, 219, 199);
+}
+
+.hero-yoo {
+    display: flex;
+    margin-bottom: -150px;
+}
+
+.hero-first {
+    margin-left: -400px;
+    margin-bottom: -70px;
+}
+
+.hero-third {
+    margin-left: 30px;
+    margin-top: 180px;
+}
+
+.hero-fourth {
+    margin-left: -15px;
+}
+
+.hero-intro {
+    margin-top: 700px;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 200;
+    line-height: 0.8;
+    width: 600px;
+}
+
+.intro {
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    padding: 16vh 0;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 500px;
+}
+
+.intro-heading {
+    font-family: tusk;
+    font-weight: 100;
+    font-size: 100px;
+    width: 500px;
+    letter-spacing: 3px;
+}
+
+.intro-content {
+    width: 600px;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+}
+
+.work {
+    /* padding: 50px 0; */
+    background-color: #fff;
+}
+
+.work-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.work-list {
+    flex: 1;
+    margin-right: 20px;
+    position: sticky;
+    margin-top: 250px;
+}
+
+.work-item {
+    margin-bottom: 520px;
+    font-family: tusk;
+    font-weight: 100;
+    font-size: 100px;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.work-last {
+    margin-bottom: 0px;
+}
+
+.work-item.highlight {
+    color: black;
+}
+
+.work-images {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-images img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.work-images img:hover {
+    transform: scale(1.05);
 }
 
 .connect-head {
