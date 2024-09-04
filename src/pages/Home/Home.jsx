@@ -54,27 +54,12 @@ const Home = () => {
         duration: 3,
         ease: 'power2.inOut',
         onEnter: () => {
-          // containerRef.current.play(); 
+          // containerRef.current.play();
         }
       });
     }
   }, []);
 
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     workRefs.current.forEach((imgRef, index) => {
-  //       const rect = imgRef.getBoundingClientRect();
-  //       if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-  //         workListRefs.current.forEach((workItem) => workItem.classList.remove('highlight'));
-  //         workListRefs.current[index].classList.add('highlight');
-  //       }
-  //     });
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -102,7 +87,7 @@ const Home = () => {
         className="home-bg"
         ref={containerRef}
       ></video>
-      <div className='home-all'>
+      <div id='home-all' className='home-all'>
         <div className='hero'>
           <div className='hero-creative'>
             <h1 className='hero-first font-style-2'>creative</h1>
@@ -120,7 +105,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='intro'>
+        <div id='intro' className='intro'>
           <div className='intro-details'>
             <h1 className='intro-heading'>YOO, I AM ANKUSH</h1>
             <p className='intro-content'>I USE MY PASSION AND SKILLS
@@ -139,33 +124,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div className='work'>
-          <h1 className='work-heading'>Works</h1>
-          <div className='work-container'>
-            <div className='work-list'>
-              <div className='work-item' ref={el => workListRefs.current[0] = el}>
-                SAIRAMA KRISHNA
-              </div>
-              <div className='work-item' ref={el => workListRefs.current[1] = el}>
-                PATHWAYS
-              </div>
-              <div className='work-item' ref={el => workListRefs.current[2] = el}>
-                EVENT RADAR
-              </div>
-              <div className='work-item work-last' ref={el => workListRefs.current[3] = el}>
-                ELAN PORTALS
-              </div>
-            </div>
-            <div className='work-images'>
-              <img ref={el => workRefs.current[0] = el} src={work1} alt="SAIRAMA KRISHNA" />
-              <img ref={el => workRefs.current[1] = el} src={work2} alt="PATHWAYS" />
-              <img ref={el => workRefs.current[2] = el} src={work1} alt="EVENT RADAR" />
-              <img ref={el => workRefs.current[3] = el} src={work2} alt="ELAN PORTALS" />
-            </div>
-          </div>
-        </div> */}
-
-        <div className='work'>
+        <div id='work' className='work'>
           <h1 className='work-heading'>Works</h1>
           <div className='work-container'>
             <div className='work-list'>
@@ -227,7 +186,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div ref={endingRef} className='ending'>
+        <div className='ending'>
           <div className='ending-connect'>
             <h1 className='connect-head connect-first'>LET'S</h1>
             <h1 className='connect-head connect-second'>CONNECT</h1>
@@ -247,16 +206,24 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className='footer'>
+            <div ref={endingRef} className='footer'>
               <div className='footer-contact'>
                 <h2 className='footer-contact-heading'>ARE YOU PLANNING A PROJECT?</h2>
                 <button className='connect-button'>CONTACT ME</button>
               </div>
               <div className='footer-social'>
-                <p>EMAIL</p>
-                <p>GITHUB</p>
-                <p>LINKEDIN</p>
-                <p>INSTAGRAM</p>
+                <a href="mailto:ankushsingh00710@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <p>EMAIL</p>
+                </a>
+                <a href="https://github.com/Walker0710" target="_blank" rel="noopener noreferrer">
+                  <p>GITHUB</p>
+                </a>
+                <a href="https://www.linkedin.com/in/ankush-singh-8a43482a4/" target="_blank" rel="noopener noreferrer">
+                  <p>LINKEDIN</p>
+                </a>
+                <a href="https://www.instagram.com/4nkush_singh" target="_blank" rel="noopener noreferrer">
+                  <p>INSTAGRAM</p>
+                </a>
               </div>
             </div>
           </div>
