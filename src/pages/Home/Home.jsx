@@ -14,8 +14,10 @@ import { TbBrandCpp } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
 import './Home.css';
 import Cover2 from '../../assets/Portfolio.mp4';
-import work1 from '../../assets/work1.png';
-import work2 from '../../assets/work2.png';
+import event from '../../assets/Projects/event.png';
+import nexus from '../../assets/Projects/nexus.png';
+import pathway from '../../assets/Projects/pathway.png';
+import sai from '../../assets/Projects/sai.png';
 
 
 
@@ -143,10 +145,10 @@ const Home = () => {
               </div>
             </div>
             <div className='work-images'>
-              <img ref={el => workRefs.current[0] = el} src={work1} alt="SAIRAMA KRISHNA" />
-              <img ref={el => workRefs.current[1] = el} src={work2} alt="PATHWAYS" />
-              <img ref={el => workRefs.current[2] = el} src={work1} alt="EVENT RADAR" />
-              <img ref={el => workRefs.current[3] = el} src={work2} alt="ELAN PORTALS" />
+              <img ref={el => workRefs.current[0] = el} src={sai} alt="SAIRAMA KRISHNA" />
+              <img ref={el => workRefs.current[1] = el} src={pathway} alt="PATHWAYS" />
+              <img ref={el => workRefs.current[2] = el} src={event} alt="EVENT RADAR" />
+              <img ref={el => workRefs.current[3] = el} src={nexus} alt="ELAN PORTALS" />
             </div>
           </div>
         </div>
