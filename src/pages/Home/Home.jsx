@@ -13,7 +13,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
 import './Home.css';
-import Cover from '../../assets/Cover.mp4';
+import Cover2 from '../../assets/Portfolio.mp4';
 import work1 from '../../assets/work1.png';
 import work2 from '../../assets/work2.png';
 
@@ -48,18 +48,19 @@ const Home = () => {
           trigger: endingRef.current,
           start: 'top bottom',
           end: 'bottom top',
-          scrub: 2,
+          scrub: 1,
         },
         backgroundColor: 'rgba(0,0,0,0)',
         duration: 3,
         ease: 'power2.inOut',
         onEnter: () => {
-          containerRef.current.play();
+          // containerRef.current.play();
         }
       });
     }
   }, []);
 
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -80,10 +81,10 @@ const Home = () => {
     <div ref={homeRef}>
 
       <video
-        src={Cover}
+        src={Cover2}
         muted
         loop
-        autoPlay
+        // autoPlay
         className="home-bg"
         ref={containerRef}
       ></video>
@@ -162,9 +163,9 @@ const Home = () => {
             <div className='skillset-list-icon'>
               <BiLogoMongodb size={130} />
             </div>
-            <div className='skillset-list-icon'>
+            {/* <div className='skillset-list-icon'>
               <TbBrandCpp size={130} />
-            </div>
+            </div> */}
             <div className='skillset-list-icon'>
               <DiNodejs size={130} />
             </div>
