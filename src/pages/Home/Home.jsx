@@ -12,13 +12,14 @@ import { DiGit } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { DiNodejs } from "react-icons/di";
+import { FaGolang } from "react-icons/fa6";
+import { SiNextdotjs } from "react-icons/si";
 import './Home.css';
 import Cover2 from '../../assets/Portfolio.mp4';
 import event from '../../assets/Projects/event.png';
 import nexus from '../../assets/Projects/nexus.png';
 import pathway from '../../assets/Projects/pathway.png';
 import sai from '../../assets/Projects/sai.png';
-
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -44,25 +45,9 @@ const Home = () => {
         duration: 3,
         ease: 'power2.inOut'
       });
-
-      gsap.to(homeRef.current, {
-        scrollTrigger: {
-          trigger: endingRef.current,
-          start: 'top bottom',
-          end: 'bottom top',
-          scrub: 1,
-        },
-        backgroundColor: 'rgba(0,0,0,0)',
-        duration: 3,
-        ease: 'power2.inOut',
-        onEnter: () => {
-          containerRef.current.play();
-        }
-      });
     }
   }, []);
 
-  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -109,22 +94,23 @@ const Home = () => {
         </div>
 
         <div id='intro' className='intro'>
-          <div className='intro-details'>
-            <h1 className='intro-heading'>YOO, I AM ANKUSH</h1>
-            <p className='intro-content'>I USE MY PASSION AND SKILLS
-              TO CREATE DIGITAL PRODUCTS AND
-              EXPERIENCES. NATIONAL AND INTERNATIONAL
-              CUSTOMERS RELY ON ME FOR DESIGN,
-              IMPLEMENTATION, AND MANAGEMENT OF
-              THEIR DIGITAL PRODUCTS. AS AN
-              INDEPENDENT, I WORK ALSO WITH WEB
-              AGENCIES, COMPANIES, STARTUPS AND
-              INDIVIDUALS TO CREATE A BLUEPRINT FOR THE
-              DIGITAL BUSINESS.</p>
-          </div>
-          <div className='intro-structure'>
-            photo
-          </div>
+          <h1 className='intro-heading'>YOO, I AM ANKUSH</h1>
+          <p className='intro-content'>I USE MY PASSION AND SKILLS
+            TO CREATE DIGITAL PRODUCTS AND
+            EXPERIENCES. NATIONAL AND INTERNATIONAL
+            CUSTOMERS RELY ON ME FOR DESIGN,
+            IMPLEMENTATION, AND MANAGEMENT OF
+            THEIR DIGITAL PRODUCTS. AS AN
+            INDEPENDENT, I WORK ALSO WITH WEB
+            AGENCIES, COMPANIES, STARTUPS AND
+            INDIVIDUALS TO CREATE A BLUEPRINT FOR THE
+            DIGITAL BUSINESS.
+            I USE MY PASSION AND SKILLS
+            TO CREATE DIGITAL PRODUCTS AND
+            EXPERIENCES. NATIONAL AND INTERNATIONAL
+            CUSTOMERS RELY ON ME FOR DESIGN,
+            IMPLEMENTATION, AND MANAGEMENT OF
+            THEIR DIGITAL PRODUCTS.</p>
         </div>
 
         <div id='work' className='work'>
@@ -132,23 +118,32 @@ const Home = () => {
           <div className='work-container'>
             <div className='work-list'>
               <div className='work-item' ref={el => workListRefs.current[0] = el}>
-                SAIRAMA KRISHNA
+              CMD IITH
               </div>
               <div className='work-item' ref={el => workListRefs.current[1] = el}>
-                PATHWAYS
+              NANOX
               </div>
               <div className='work-item' ref={el => workListRefs.current[2] = el}>
-                EVENT RADAR
+                SAIRAMA KRISHNA
               </div>
               <div className='work-item' ref={el => workListRefs.current[3] = el}>
+                PATHWAYS
+              </div>
+              <div className='work-item' ref={el => workListRefs.current[4] = el}>
+                EVENT RADAR
+              </div>
+              <div className='work-item' ref={el => workListRefs.current[5] = el}>
                 ELAN PORTALS
               </div>
             </div>
             <div className='work-images'>
-              <img ref={el => workRefs.current[0] = el} src={sai} alt="SAIRAMA KRISHNA" />
-              <img ref={el => workRefs.current[1] = el} src={pathway} alt="PATHWAYS" />
-              <img ref={el => workRefs.current[2] = el} src={event} alt="EVENT RADAR" />
-              <img ref={el => workRefs.current[3] = el} src={nexus} alt="ELAN PORTALS" />
+
+              <img ref={el => workRefs.current[0] = el} src={sai} alt="CMD IITH" />
+              <img ref={el => workRefs.current[1] = el} src={sai} alt="NANOX" />
+              <img ref={el => workRefs.current[2] = el} src={sai} alt="SAIRAMA KRISHNA" />
+              <img ref={el => workRefs.current[3] = el} src={pathway} alt="PATHWAYS" />
+              <img ref={el => workRefs.current[4] = el} src={event} alt="EVENT RADAR" />
+              <img ref={el => workRefs.current[5] = el} src={nexus} alt="ELAN PORTALS" />
             </div>
           </div>
         </div>
@@ -160,28 +155,25 @@ const Home = () => {
               <DiJavascript1 size={150} />
             </div>
             <div className='skillset-list-icon'>
-              <DiGit size={130} />
+              <FaGolang size={150} />
+            </div>
+            <div className='skillset-list-icon'>
+              <SiNextdotjs size={130} />
+            </div>
+            <div className='skillset-list-icon'>
+              <FaReact size={110} />
+            </div>
+            <div className='skillset-list-icon'>
+              <DiGit size={150} />
             </div>
             <div className='skillset-list-icon'>
               <BiLogoMongodb size={130} />
             </div>
-            {/* <div className='skillset-list-icon'>
-              <TbBrandCpp size={130} />
-            </div> */}
             <div className='skillset-list-icon'>
-              <DiNodejs size={130} />
-            </div>
-            <div className='skillset-list-icon'>
-              <FaReact size={130} />
-            </div>
-            <div className='skillset-list-icon'>
-              <SiMicrosoftazure size={130} />
+              <SiMicrosoftazure size={110} />
             </div>
             <div className='skillset-list-icon'>
               <IoLogoFirebase size={130} />
-            </div>
-            <div className='skillset-list-icon'>
-              <SiVercel size={130} />
             </div>
             <div className='skillset-list-icon'>
               <SiNetlify size={130} />
@@ -190,17 +182,19 @@ const Home = () => {
         </div>
 
         <div className='ending'>
+
           <div className='ending-connect'>
             <h1 className='connect-head connect-first'>LET'S</h1>
             <h1 className='connect-head connect-second'>CONNECT</h1>
           </div>
+
           <div className='ending-inter-foot'>
             <div className='connect-interested'>
               <h2 className='connect-interested-heading'>WHAT INTEREST'S ME</h2>
               <div className='connect-interested-list'>
                 <div className='connect-interested-list-first'>
-                  <button className='connect-button'>FRONTEND DEVELOPMENT</button>
                   <button className='connect-button'>BACKEND DEVELOPMENT</button>
+                  <button className='connect-button'>FRONTEND DEVELOPMENT</button>
                   <button className='connect-button'>UX/UI DESIGN</button>
                 </div>
                 <div className='connect-interested-list-second'>
@@ -209,7 +203,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div ref={endingRef} className='footer'>
+
+            <div className='footer'>
               <div className='footer-contact'>
                 <h2 className='footer-contact-heading'>ARE YOU PLANNING A PROJECT?</h2>
                 <button className='connect-button'>CONTACT ME</button>
@@ -231,6 +226,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

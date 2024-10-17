@@ -85,26 +85,30 @@
     background-color: rgba(0, 0, 0, 0);
     height: auto;
     padding: 16vh 0;
-    padding-top: 300px;
+    padding-top: 350px;
     padding-bottom: 300px;
     position: relative;
     width: 100%;
     display: flex;
-    gap: 500px;
+    flex-direction: column;
 }
 
 .intro-heading {
     font-family: tusk;
     font-weight: 100;
     font-size: 100px;
-    width: 500px;
     letter-spacing: 3px;
+    margin-right: auto;
+    margin-left: 350px;
 }
 
 .intro-content {
-    width: 600px;
+    width: 1220px;
     font-family: "Poppins", sans-serif;
     font-size: 26px;
+    margin-right: auto;
+    margin-left: 350px;
+
 }
 
 .skillset {
@@ -133,6 +137,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .connect-head {
@@ -142,9 +147,12 @@
 }
 
 .ending {
-    margin-top: 390px;
+    margin-top: 190px;
+    padding-top: 150px;
     display: flex;
     margin-left: -270px;
+    background-color: white;
+    color: black;
 }
 
 .ending-connect {
@@ -175,7 +183,8 @@
 .connect-button {
     padding: 20px;
     background: transparent;
-    color: #f5eee6;
+    /* color: #f5eee6; */
+    color: black;
     margin: 10px;
     border: #f5eee6 solid;
     border-radius: 15px;
