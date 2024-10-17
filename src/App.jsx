@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home/Home'
 import Navbar from './components/Navbar/Navbar'
-import Navbar11 from './components/Navbar11/Navbar11';
-import Footer from './components/Footer/Footer'
 import './App.css'
 
 function AppContent() {
@@ -10,11 +8,9 @@ function AppContent() {
   return (
     <>
       <Navbar />
-      {/* <Navbar11/> */}
       <Routes>
         <Route path='/' exact element={<Home />} />
       </Routes>
-      <Footer />
     </>
   );
 }

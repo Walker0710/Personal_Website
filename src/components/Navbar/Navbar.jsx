@@ -15,16 +15,22 @@ function Navbar() {
 
                     <ul className='nav-menu'>
                         <li className='nav-item'>
-                            <a href='#home-all' className='nav-links'>Home</a>
+                            <a href='#home-all' className='nav-links'>HOME</a>
                         </li>
                         <li className='nav-item'>
-                            <a href='#intro' className='nav-links'>About</a>
+                            <a href='#intro' className='nav-links'>ABOUT</a>
                         </li>
                         <li className='nav-item'>
-                            <a href='#work' className='nav-links'>Projects</a>
+                            <a href='#work' className='nav-links'>WORKS</a>
                         </li>
                         <li className='nav-item'>
-                            <a href='/projects' className='nav-links'>Blogs</a>
+                            <a href='#skillset' className='nav-links'>SKILLSET</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href='#r' className='nav-links'>RESUME</a>
+                        </li>
+                        <li className='nav-item'>
+                            <a href='/' className='nav-links'>CONNECT</a>
                         </li>
                     </ul>
                 </div>

@@ -148,7 +148,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='skillset'>
+        <div id='skillset' className='skillset'>
           <h1 className='skillset-heading'>SKILLSET</h1>
           <div className='skillset-list'>
             <div className='skillset-list-icon'>
@@ -204,7 +204,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className='footer'>
+            <div id='connect' className='footer'>
               <div className='footer-contact'>
                 <h2 className='footer-contact-heading'>ARE YOU PLANNING A PROJECT?</h2>
                 <button className='connect-button'>CONTACT ME</button>
