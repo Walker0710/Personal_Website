@@ -30,7 +30,7 @@ function Navbar() {
                             <a href='#r' className='nav-links'>RESUME</a>
                         </li>
                         <li className='nav-item'>
-                            <a href='/' className='nav-links'>CONNECT</a>
+                            <a href='#connect' className='nav-links'>CONNECT</a>
                         </li>
                     </ul>
                 </div>

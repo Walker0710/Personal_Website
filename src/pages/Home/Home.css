@@ -108,6 +108,7 @@
     font-size: 26px;
     margin-right: auto;
     margin-left: 350px;
+    /* text-align: center; */
 
 }
 
@@ -254,7 +255,7 @@
 .work-list {
     flex: 1;
     position: sticky;
-    top: 280px;
+    top: 200px;
     z-index: 2;
 }
 

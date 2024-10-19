@@ -1,17 +1,13 @@
 import React, { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { useGSAP } from '@gsap/react';
 import { SiNetlify } from "react-icons/si";
-import { SiVercel } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiMicrosoftazure } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { DiGit } from "react-icons/di";
 import { BiLogoMongodb } from "react-icons/bi";
-import { TbBrandCpp } from "react-icons/tb";
-import { DiNodejs } from "react-icons/di";
 import { FaGolang } from "react-icons/fa6";
 import { SiNextdotjs } from "react-icons/si";
 import './Home.css';
@@ -94,23 +90,18 @@ const Home = () => {
         </div>
 
         <div id='intro' className='intro'>
-          <h1 className='intro-heading'>YOO, I AM ANKUSH</h1>
-          <p className='intro-content'>I USE MY PASSION AND SKILLS
-            TO CREATE DIGITAL PRODUCTS AND
-            EXPERIENCES. NATIONAL AND INTERNATIONAL
-            CUSTOMERS RELY ON ME FOR DESIGN,
-            IMPLEMENTATION, AND MANAGEMENT OF
-            THEIR DIGITAL PRODUCTS. AS AN
-            INDEPENDENT, I WORK ALSO WITH WEB
-            AGENCIES, COMPANIES, STARTUPS AND
-            INDIVIDUALS TO CREATE A BLUEPRINT FOR THE
-            DIGITAL BUSINESS.
-            I USE MY PASSION AND SKILLS
-            TO CREATE DIGITAL PRODUCTS AND
-            EXPERIENCES. NATIONAL AND INTERNATIONAL
-            CUSTOMERS RELY ON ME FOR DESIGN,
-            IMPLEMENTATION, AND MANAGEMENT OF
-            THEIR DIGITAL PRODUCTS.</p>
+          <h1 className='intro-heading'>HEY, I'M ANKUSH</h1>
+          <p className='intro-content'>AND I USE WALKER0710 AS MY NICKNAME, A PASSIONATE DESIGNER
+            AND FULL-STACK WEB
+            DEVELOPER. I'M CURRENTLY DIVING INTO THE WORLD OF DEVOPS, 
+            COMBINING DESIGN AND TECHNICAL EXPERTISE TO BRING DIGITAL 
+            VISIONS TO LIFE. WITH A KEEN EYE FOR DETAIL AND A LOVE FOR 
+            FUNCTIONALITY, I STRIVE TO CREATE SEAMLESS USER 
+            EXPERIENCES THAT NOT ONLY LOOK GREAT BUT ALSO PERFORM FLAWLESSLY. 
+            I ALWAYS 
+            EXPLORING NEW TOOLS AND TECHNIQUES TO IMPROVE MY WORK. I LOVE 
+            COLLABORATING WITH CLIENTS AND PARTNERS TO CREATE IMPACTFUL, 
+            USER-FRIENDLY DIGITAL EXPERIENCES THAT TRULY RESONATE.</p>
         </div>
 
         <div id='work' className='work'>
@@ -118,10 +109,10 @@ const Home = () => {
           <div className='work-container'>
             <div className='work-list'>
               <div className='work-item' ref={el => workListRefs.current[0] = el}>
-              CMD IITH
+                CMD IITH
               </div>
               <div className='work-item' ref={el => workListRefs.current[1] = el}>
-              NANOX
+                NANOX
               </div>
               <div className='work-item' ref={el => workListRefs.current[2] = el}>
                 SAIRAMA KRISHNA
