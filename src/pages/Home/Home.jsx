@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
-import {useGSAP} from '@gsap/react';
+import { useGSAP } from '@gsap/react';
 import { motion } from 'framer-motion';
 
 
@@ -37,11 +37,11 @@ const Home = () => {
   useEffect(() => {
     const cursorText = document.getElementById('cursor-text');
     const cursor = document.getElementById('cursor');
-    
+
     if (cursorText && cursor) {
       cursorTextRef.current = cursorText;
       cursorRef.current = cursor;
-  
+
       cursorText.style.fontSize = '0.04vw';
     }
   }, []);
@@ -120,10 +120,9 @@ const Home = () => {
             <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-fourth font-style-1'>DEVELOPER </h1>
           </div>
           <div className='hero-intro'>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen
-            book.
+            I'm a developer and UX/UI designer based in India. I'm
+            passionate about minimal and brutalist design. My goal is to combine creativity
+            and functionality to deliver impactful digital experiences.
           </div>
         </div>
 
@@ -131,19 +130,19 @@ const Home = () => {
           <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='intro-heading'>HEY, I'M ANKUSH</h1>
           <p className='intro-content'>AND I USE WALKER0710 AS MY NICKNAME, A PASSIONATE DESIGNER
             AND FULL-STACK WEB
-            DEVELOPER. I'M CURRENTLY DIVING INTO THE WORLD OF DEVOPS, 
-            COMBINING DESIGN AND TECHNICAL EXPERTISE TO BRING DIGITAL 
-            VISIONS TO LIFE. WITH A KEEN EYE FOR DETAIL AND A LOVE FOR 
-            FUNCTIONALITY, I STRIVE TO CREATE SEAMLESS USER 
-            EXPERIENCES THAT NOT ONLY LOOK GREAT BUT ALSO PERFORM FLAWLESSLY. 
-            I ALWAYS 
-            EXPLORING NEW TOOLS AND TECHNIQUES TO IMPROVE MY WORK. I LOVE 
-            COLLABORATING WITH CLIENTS AND PARTNERS TO CREATE IMPACTFUL, 
+            DEVELOPER. I'M CURRENTLY DIVING INTO THE WORLD OF DEVOPS,
+            COMBINING DESIGN AND TECHNICAL EXPERTISE TO BRING DIGITAL
+            VISIONS TO LIFE. WITH A KEEN EYE FOR DETAIL AND A LOVE FOR
+            FUNCTIONALITY, I STRIVE TO CREATE SEAMLESS USER
+            EXPERIENCES THAT NOT ONLY LOOK GREAT BUT ALSO PERFORM FLAWLESSLY.
+            I ALWAYS
+            EXPLORING NEW TOOLS AND TECHNIQUES TO IMPROVE MY WORK. I LOVE
+            COLLABORATING WITH CLIENTS AND PARTNERS TO CREATE IMPACTFUL,
             USER-FRIENDLY DIGITAL EXPERIENCES THAT TRULY RESONATE.</p>
         </div>
 
         <div id='work' className='work'>
-          <h1 className='work-heading'>Works</h1>
+          <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='work-heading'>Works</h1>
           <div className='work-container'>
             <div className='work-list'>
               <div className='work-item' ref={el => workListRefs.current[0] = el}>
@@ -178,7 +177,7 @@ const Home = () => {
         </div>
 
         <div id='skillset' className='skillset'>
-          <h1 className='skillset-heading'>SKILLSET</h1>
+          <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='skillset-heading'>SKILLSET</h1>
           <div className='skillset-list'>
             <div className='skillset-list-icon'>
               <DiJavascript1 size={150} />
