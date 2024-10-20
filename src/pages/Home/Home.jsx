@@ -20,6 +20,8 @@ import event from '../../assets/Projects/event.png';
 import nexus from '../../assets/Projects/nexus.png';
 import pathway from '../../assets/Projects/pathway.png';
 import sai from '../../assets/Projects/sai.png';
+import cmd from '../../assets/Projects/CMD1.png';
+import nano from '../../assets/Projects/NANOX.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -166,8 +168,8 @@ const Home = () => {
             </div>
             <div className='work-images'>
 
-              <img ref={el => workRefs.current[0] = el} src={sai} alt="CMD IITH" />
-              <img ref={el => workRefs.current[1] = el} src={sai} alt="NANOX" />
+              <img ref={el => workRefs.current[0] = el} src={cmd} alt="CMD IITH" />
+              <img ref={el => workRefs.current[1] = el} src={nano} alt="NANOX" />
               <img ref={el => workRefs.current[2] = el} src={sai} alt="SAIRAMA KRISHNA" />
               <img ref={el => workRefs.current[3] = el} src={pathway} alt="PATHWAYS" />
               <img ref={el => workRefs.current[4] = el} src={event} alt="EVENT RADAR" />
