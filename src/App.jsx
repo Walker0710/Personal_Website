@@ -2,12 +2,14 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './pages/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import './App.css'
+import Cursor from './components/Cursor/Cursor';
 
 function AppContent() {
 
   return (
     <>
       <Navbar />
+      <Cursor/>
       <Routes>
         <Route path='/' exact element={<Home />} />
       </Routes>

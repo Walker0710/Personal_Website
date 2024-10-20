@@ -1,5 +1,9 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
+import {useGSAP} from '@gsap/react';
+import { motion } from 'framer-motion';
+
+
 import { ScrollTrigger } from 'gsap/all';
 import { SiNetlify } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
@@ -17,16 +21,50 @@ import nexus from '../../assets/Projects/nexus.png';
 import pathway from '../../assets/Projects/pathway.png';
 import sai from '../../assets/Projects/sai.png';
 
-
 gsap.registerPlugin(ScrollTrigger);
+
 
 const Home = () => {
 
+  const cursorTextRef = useRef(null);
+  const cursorRef = useRef(null);
   const containerRef = useRef(null);
   const homeRef = useRef(null);
   const endingRef = useRef(null);
   const workRefs = useRef([]);
   const workListRefs = useRef([]);
+
+  useEffect(() => {
+    const cursorText = document.getElementById('cursor-text');
+    const cursor = document.getElementById('cursor');
+    
+    if (cursorText && cursor) {
+      cursorTextRef.current = cursorText;
+      cursorRef.current = cursor;
+  
+      cursorText.style.fontSize = '0.04vw';
+    }
+  }, []);
+
+  const onMouseEnter = () => {
+    cursorTextRef.current.style.fontSize = '0.04vw';
+    cursorRef.current.classList.add('rotate');
+    gsap.to('.cursor', {
+      scale: 25,
+      duration: 0.3
+    });
+  };
+
+  const onMouseLeave = () => {
+    gsap.to('.cursor', {
+      scale: 1,
+      duration: 0.3,
+      onComplete: () => {
+        cursorTextRef.current.innerHTML = '';
+        cursorRef.current.classList.remove('rotate');
+      }
+    });
+  };
 
   useEffect(() => {
     if (window.innerWidth > 992) {
@@ -73,13 +111,13 @@ const Home = () => {
       ></video>
       <div id='home-all' className='home-all'>
         <div className='hero'>
-          <div className='hero-creative'>
-            <h1 className='hero-first font-style-2'>creative</h1>
-            <div className='hero-yoo'>
+          <div className='hero-creative' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
+            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-first font-style-2'>creative</h1>
+            <div onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-yoo'>
               <h1 className='hero-second font-style-1'>DESIGNER </h1>
               <h1 className='hero-third font-style-2'>& </h1>
             </div>
-            <h1 className='hero-fourth font-style-1'>DEVELOPER </h1>
+            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-fourth font-style-1'>DEVELOPER </h1>
           </div>
           <div className='hero-intro'>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -90,7 +128,7 @@ const Home = () => {
         </div>
 
         <div id='intro' className='intro'>
-          <h1 className='intro-heading'>HEY, I'M ANKUSH</h1>
+          <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='intro-heading'>HEY, I'M ANKUSH</h1>
           <p className='intro-content'>AND I USE WALKER0710 AS MY NICKNAME, A PASSIONATE DESIGNER
             AND FULL-STACK WEB
             DEVELOPER. I'M CURRENTLY DIVING INTO THE WORLD OF DEVOPS, 
@@ -175,13 +213,13 @@ const Home = () => {
         <div className='ending'>
 
           <div className='ending-connect'>
-            <h1 className='connect-head connect-first'>LET'S</h1>
-            <h1 className='connect-head connect-second'>CONNECT</h1>
+            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='connect-head connect-first'>LET'S</h1>
+            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='connect-head connect-second'>CONNECT</h1>
           </div>
 
           <div className='ending-inter-foot'>
             <div className='connect-interested'>
-              <h2 className='connect-interested-heading'>WHAT INTEREST'S ME</h2>
+              <h2 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='connect-interested-heading'>WHAT INTEREST'S ME</h2>
               <div className='connect-interested-list'>
                 <div className='connect-interested-list-first'>
                   <button className='connect-button'>BACKEND DEVELOPMENT</button>
@@ -196,7 +234,7 @@ const Home = () => {
             </div>
 
             <div id='connect' className='footer'>
-              <div className='footer-contact'>
+              <div onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='footer-contact'>
                 <h2 className='footer-contact-heading'>ARE YOU PLANNING A PROJECT?</h2>
                 <button className='connect-button'>CONTACT ME</button>
               </div>
