@@ -18,7 +18,7 @@ html {
     align-items: center;
     height: 80px;
     max-width: 1500px;
-    gap: 650px;
+    gap: 420px;
     margin-left: 175px;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 200;
@@ -27,7 +27,11 @@ html {
 .navbar-logo {
     color: #fff;
     text-decoration: none;
+    margin-left: 100px;
+}
 
+.logo-yoo {
+    width: 150px;
 }
 
 .img {
@@ -57,9 +61,3 @@ html {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
 }
-
-/* ul {
-    margin-top: 50px;
-    display: flex;
-    gap: 50px;
-} */

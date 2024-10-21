@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.png';
 import './Navbar.css'
 
 function Navbar() {
@@ -9,7 +10,7 @@ function Navbar() {
             <div className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo'>
-                        {/* <img className='logo-yoo' src={Logo} alt="logo" /> */}
+                        <img className='logo-yoo' src={logo} alt="logo" />
                         <i class='fab fa-typo3' />
                     </Link>
 
