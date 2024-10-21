@@ -111,7 +111,7 @@ const Home = () => {
       ></video>
       <div id='home-all' className='home-all'>
         <div className='hero'>
-          <div className='hero-creative' onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter}>
+          <div className='hero-creative' >
             <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-first font-style-2'>creative</h1>
             <div onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-yoo'>
               <h1 className='hero-second font-style-1'>DESIGNER </h1>
