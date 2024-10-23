@@ -112,12 +112,12 @@ const Home = () => {
       <div id='home-all' className='home-all'>
         <div className='hero'>
           <div className='hero-creative' >
-            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-first font-style-2'>creative</h1>
-            <div onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-yoo'>
+            <h1 className='hero-first font-style-2'>creative</h1>
+            <div className='hero-yoo'>
               <h1 className='hero-second font-style-1'>DESIGNER </h1>
               <h1 className='hero-third font-style-2'>& </h1>
             </div>
-            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='hero-fourth font-style-1'>DEVELOPER </h1>
+            <h1 className='hero-fourth font-style-1'>DEVELOPER </h1>
           </div>
           <div className='hero-intro'>
             I'm a developer and UX/UI designer based in India. I'm
@@ -212,8 +212,8 @@ const Home = () => {
         <div className='ending'>
 
           <div className='ending-connect'>
-            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='connect-head connect-first'>LET'S</h1>
-            <h1 onMouseLeave={onMouseLeave} onMouseMove={onMouseEnter} className='connect-head connect-second'>CONNECT</h1>
+            <h1 className='connect-head connect-first'>LET'S</h1>
+            <h1 className='connect-head connect-second'>CONNECT</h1>
           </div>
 
           <div className='ending-inter-foot'>
