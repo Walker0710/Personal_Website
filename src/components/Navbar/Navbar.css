@@ -8,18 +8,18 @@ html {
     font-size: 1.2rem;
     width: 100%;
     background: rgba(23, 30, 39, 0.6); 
-    backdrop-filter: blur(5px); 
-    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(0.26vw); 
+    -webkit-backdrop-filter: blur(0.52vw); 
 }
 
 .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    max-width: 1500px;
-    gap: 420px;
-    margin-left: 175px;
+    height: 4.16vw;
+    max-width: 78vw;
+    gap: 21.84vw;
+    margin-left: 9.1vw;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 200;
 }
@@ -27,37 +27,36 @@ html {
 .navbar-logo {
     color: #fff;
     text-decoration: none;
-    margin-left: 100px;
+    margin-left: 5.2vw;
 }
 
 .logo-yoo {
-    width: 150px;
+    width: 7.8vw;
 }
 
 .img {
-    margin-left: 50px;
+    margin-left: 2.6vw;
 }
 
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(7, auto);
-    grid-gap: 80px;
+    grid-gap: 4.16vw;
     list-style: none;
     text-align: center;
     width: 60vw;
     justify-content: end;
-    padding-bottom: 50px;
-    margin-left: 420px;
-    margin-top: 50px;
+    padding-bottom: 2.6vw;
+    margin-left: 21.84vw;
+    margin-top: 2.6vw;
 }
 
 .nav-links {
-    /* color: #bd9f67; */
     color: #fff;
     text-decoration: none;
 }
 
 .nav-links:hover {
-    border-bottom: 4px solid #fff;
+    border-bottom: 0.208vw solid #fff;
     transition: all 0.2s ease-out;
 }
