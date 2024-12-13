@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 
-
 import { ScrollTrigger } from 'gsap/all';
 import { SiNetlify } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
@@ -13,7 +12,7 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { FaGolang } from "react-icons/fa6";
 import { SiNextdotjs } from "react-icons/si";
 import './Home.css';
-import Cover2 from '../../assets/Portfolio.mp4';
+import Cover2 from '../../assets/Portfolio22.mp4';
 import event from '../../assets/Projects/event.png';
 import nexus from '../../assets/Projects/nexus.png';
 import pathway from '../../assets/Projects/pathway.png';
@@ -22,7 +21,6 @@ import cmd from '../../assets/Projects/CMD1.png';
 import nano from '../../assets/Projects/NANOX.png';
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 const Home = () => {
 
